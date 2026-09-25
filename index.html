@@ -11,68 +11,106 @@
 <body>
 <header>
     <div class="navbar">
-        <div class="navlogo border">
-         <div class="logo"> </div>
+        <a href="index.html" class="navlogo border" aria-label="Amazon home">
+            <div class="logo"></div>
+        </a>
+
+        <div class="nav-address border">
+            <p class="first">Deliver to</p>
+            <div class="icon1">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="second">India</p>
+            </div>
         </div>
-         <div class="nav-address border">
-           <p class="first">Deliver to</p>
-           <div class="icon1">
-            <i class="fa-solid fa-location-dot"></i>
-            <p class="second">India</p>
-           </div>    
-        </div>
+
         <div class="search">
             <select class="sel">
                 <option>All</option>
             </select>
-            <input placeholder="Search Amazon" class="in ">
+            <input placeholder="Search Amazon" class="in" />
             <div class="icon2">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-        </div> 
-        
-         <div>
-                <p><span>Hello, sign in</span></p>
-                <p class="nav-list">Account & Lists</p>
-        </div>  
-         <div>
-                <p><span>Returns</span></p>
-                <p class="nav-order">& Orders</p>
-        </div>  
-        <div class="cart" >
+        </div>
+
+        <button class="nav-user border" data-open-modal>
+            <p><span>Hello, sign in</span></p>
+            <p class="nav-list">Account & Lists</p>
+        </button>
+
+        <div class="nav-links border">
+            <p><span>Returns</span></p>
+            <p class="nav-order">& Orders</p>
+        </div>
+
+        <a href="cart.html" class="cart-link border" aria-label="Open cart">
             <i class="fa-solid fa-cart-shopping"></i>
-            Cart
-        </div>
-        </div>
-        </div>
-      </div>
-       <div class="navbar2">
-           <div class="menubar">
+            <span>Cart</span>
+            <span class="cart-count" id="cart-count">0</span>
+        </a>
+    </div>
+
+    <div class="navbar2">
+        <div class="menubar">
             <i class="fa-solid fa-bars"></i>
             <p class="all">All</p>
-           </div>
-           <div class="panel">
+        </div>
+        <div class="panel">
             <p>Today's Deals</p>
-             <p>Prime Video</p>
-              <p>Gift Cards</p>
-               <p>Sell</p>
-                <p>Customer Service</p>
-                 <p>Registry</p>
-           </div>
-           </div>
+            <p>Prime Video</p>
+            <p>Gift Cards</p>
+            <p>Sell</p>
+            <p>Customer Service</p>
+            <p>Registry</p>
+        </div>
     </div>
 </header>
-   <div class="hero-sec">
-     <div class="text">
+
+<div class="hero-sec">
+    <div class="hero-carousel">
+        <div class="carousel-slide active" style="background-image: url('image1.png');">
+            <div class="hero-content">
+                <p class="hero-tag">Limited-time deals</p>
+                <h2>Fresh picks for your home and lifestyle</h2>
+                <a href="product.html" class="hero-cta">Shop now</a>
+            </div>
+        </div>
+        <div class="carousel-slide" style="background-image: url('image2.jpg');">
+            <div class="hero-content">
+                <p class="hero-tag">Top sellers</p>
+                <h2>Upgrade your workspace and entertainment</h2>
+                <a href="product.html" class="hero-cta">Explore deals</a>
+            </div>
+        </div>
+        <div class="carousel-slide" style="background-image: url('image7.jpg');">
+            <div class="hero-content">
+                <p class="hero-tag">New arrivals</p>
+                <h2>Curated essentials for everyday living</h2>
+                <a href="product.html" class="hero-cta">Browse today</a>
+            </div>
+        </div>
+
+        <button class="carousel-btn prev" data-carousel-prev aria-label="Previous slide">‹</button>
+        <button class="carousel-btn next" data-carousel-next aria-label="Next slide">›</button>
+
+        <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+    <div class="text">
         <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href="#">Click here to go to amazon.in</a></p>
-     </div>
-   </div>
+    </div>
+</div>
    <div class="shop-section">
     <div class="box1 box">
         <div class="content1">
         <h2>Get your game on</h2>
         <div class="box1-img" style="background-image: url(image2.jpg);"></div>
             <p>Shop gaming</p>
+            <a href="product.html" class="shop-link">View details</a>
         </div>
         </div>
         <div class="box2 box">
@@ -375,5 +413,22 @@
         </div>
      </div>
     </footer>
+
+    <div class="modal-backdrop" id="auth-modal" aria-hidden="true">
+        <div class="auth-modal" role="dialog" aria-modal="true" aria-labelledby="signin-title">
+            <button class="close-modal" data-close-modal aria-label="Close login dialog">×</button>
+            <h2 id="signin-title">Sign in</h2>
+            <label>
+                Email or mobile phone number
+                <input type="text" placeholder="Enter your email" />
+            </label>
+            <button class="primary-btn full-width">Continue</button>
+            <p class="helper-text">New to Amazon? <button class="text-button">Create your Amazon account</button></p>
+        </div>
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
