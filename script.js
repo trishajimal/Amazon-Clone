@@ -3,31 +3,7 @@ const STORAGE_KEY = 'amazonCart';
 function getCart() {
   try {
     const stored = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
-    if (Array.isArray(stored) && stored.length) {
-      return stored;
-    }
-
-    const starterCart = [
-      {
-        id: 'starter-1',
-        name: 'Smart Wireless Speaker',
-        price: 79.99,
-        qty: 1,
-        image: 'image3.jpg',
-        category: 'Audio & Music',
-      },
-      {
-        id: 'starter-2',
-        name: 'Desk Organizer Set',
-        price: 34.5,
-        qty: 1,
-        image: 'image4.jpg',
-        category: 'Home Office',
-      },
-    ];
-
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(starterCart));
-    return starterCart;
+    return Array.isArray(stored) ? stored : [];
   } catch {
     return [];
   }
