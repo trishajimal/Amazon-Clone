@@ -1,56 +1,39 @@
-<<<<<<< HEAD
-# Amazon Style Landing Page
+# Amazon Clone
 
-This project is a static Amazon-inspired homepage built with HTML and CSS.
+A front-end e-commerce mockup inspired by Amazon. This project recreates the look and feel of the Amazon shopping experience with a responsive homepage, product cards, shopping cart interactions, and a sign-in modal.
 
-## Features
-- Top navigation bar similar to Amazon
-- Search bar and categories panel
-- Hero banner section
-- Product grid cards
-- Footer with useful links
-- Responsive layout for smaller screens
+## Overview
 
-## Files
-- `index.html` – page structure
-- `style.css` – styling and responsive layout
-- `amazon_logo.png` and image assets – visual content used in the page
-
-## How to run
-1. Open the project folder in a browser.
-2. Double-click `index.html` or run a local static server.
-=======
-# Amazon Style Shopping Experience
-
-This project is a front-end e-commerce mockup inspired by Amazon. It includes a homepage, product detail page, cart page, sign-in modal, and responsive mobile-friendly styling.
+This project is built using plain HTML, CSS, and JavaScript to simulate a shopping website without a backend. It focuses on UI design, product browsing, and cart management using browser localStorage.
 
 ## Features
-- Amazon-inspired top navigation bar
-- Search bar and category menu
-- Hero banner with auto-rotating carousel
-- Product grid sections with category cards
-- Product detail page with image gallery and buy actions
-- Shopping cart page with quantity update and remove functionality
+
+- Amazon-inspired navigation bar and category menu
+- Hero banner and promotional sections
+- Product grid layout with category cards
+- Responsive design for desktop and mobile devices
 - Sign-in modal popup
-- Cart counter using browser local storage
-- Responsive layout for desktop, tablet, and mobile screens
+- Shopping cart page with add, remove, and quantity controls
+- Cart count persistence using localStorage
+- Product and cart interactions handled with JavaScript
 
-## Project files
-- `index.html` – homepage layout and landing page content
-- `product.html` – product detail page
-- `cart.html` – shopping cart page
-- `style.css` – all styling, layout rules, and media queries
-- `script.js` – carousel, modal, cart logic, and local storage behavior
-- `amazon_logo.png` and image assets – visuals used in the design
+## Project Structure
 
-## How to run
-1. Open the project folder in VS Code or any browser.
-2. You can either:
-   - double-click `index.html`, or
-   - run a local static server.
->>>>>>> 75ceb16 (Made Responsive)
+- `index.html` - main homepage
+- `cart.html` - shopping cart page
+- `style.css` - page styling and responsive layout
+- `script.js` - cart logic, modal behavior, and interactive UI updates
+- `flag.png` - country flag icon used in the navbar
+- `img/` - local product and promotional images
 
-Example using Python:
+## How to Run
+
+You can open the site directly in a browser:
+
+1. Navigate to the project folder.
+2. Open `index.html` in your browser.
+
+For a local web server, run:
 
 ```bash
 python -m http.server 8000
@@ -63,8 +46,13 @@ http://localhost:8000
 ```
 
 ## Notes
-<<<<<<< HEAD
-This is a front-end mockup for learning and practice, not the full Amazon website.
-=======
-This is a frontend mockup built for learning and practice. It does not include real Amazon backend functionality, payments, authentication, or live product data.
->>>>>>> 75ceb16 (Made Responsive)
+
+This is a static frontend mockup intended for learning and practice. It does not include real Amazon backend functionality, account authentication, real payments, or live inventory data.
+
+## Tech Stack
+
+- HTML5
+- CSS3
+- JavaScript
+- Local browser storage for cart persistence
+
